@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Automatic Electrostatic Compensating Calculatoriator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="stylesheet" href="libs/bootstrap-3.0.0/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="libs/bootstrap-3.0.0/dist/css/bootstrap-theme.css">
+
+        <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header><h1>Automatic Electrostatic Compensating Calculatoriator</h1></header>
+            <!--[if lt IE 7]>
+                <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+            <![endif]-->
+        </div>
+        <div class="container">
+
+
+
+
+            <div class="well">
+                <header><h2>Ohm's Law Calculator</h2></header>
+                
+                <!-- Add your site or application content here -->
+                <form id="ohms-law" class="calculator" role="form">
+                    <div class="messages alert alert-info"></div>
+                    <div class="input-row form-group">
+                        <input type="radio" name="calc-fixed-input"  id="i-current-select" class="inline-form-el action-focus radio" data-result-focus="Current"/>
+                        <label for="i-current-select" class="control-label">Current</label>
+                        <input type="number" id="i-Current" name="i-Current" class="action-input form-control" />
+                        <label for="i-Current" class="control-label">Amps</label>
+                    </div>
+                    <div class="input-row form-group">
+                        <input type="radio" name="calc-fixed-input"  id="i-ohms-law-resistance-select" class="inline action-focus radio" data-result-focus="Resistance"/>
+                        <label for="i-ohms-law-resistance-select" class="control-label">Resistance</label>
+                        <input type="number" id="i-Resistance" name="i-Resistance" class="action-input form-control" />
+                        <label for="i-Resistance" class="control-label">Ohms</label>
+                    </div>
+                    <div class="input-row form-group">
+                        <input type="radio" name="calc-fixed-input"  id="i-voltage-select" class="inline action-focus radio" data-result-focus="Voltage"/>
+                        <label for="i-voltage-select" class="control-label">Voltage</label>
+                        <input type="number" id="i-Voltage" name="i-Voltage" class="action-input form-control" />
+                        <label for="i-Voltage" class="control-label">Volts</label>
+                    </div>
+                </form>
+            </div>
+
+            
+            <div class="well">
+                <header><h2>Capacitor Impedance Calculator</h2></header>
+                
+                <!-- Add your site or application content here -->
+                <form id="cap-impedance" class="calculator" role="form">
+                    <div class="messages alert alert-info"></div>
+                    <div class="input-row form-group">
+                        <input type="radio" name="calc-fixed-input"  id="i-cap-imp-capacitance" class="inline-form-el action-focus radio" data-result-focus="Capacitance"/>
+                        <label for="i-cap-imp-capacitance" class="control-label">Capacitance</label>
+                        <input type="number" id="i-Capacitance" name="i-Capacitance" class="action-input set-current form-control" />
+                        <label for="i-Capacitance" class="control-label">Farads</label>
+                    </div>
+                    <div class="input-row form-group">
+                        <input type="radio" name="calc-fixed-input"  id="i-cap-imp-frequency-select" class="inline action-focus radio" data-result-focus="Frequency"/>
+                        <label for="i-cap-imp-frequency-select" class="control-label">Frequency</label>
+                        <input type="number" id="i-Frequency" name="i-Frequency" class="action-input set-frequency form-control" />
+                        <label for="i-Frequency" class="control-label">Hertz</label>
+                    </div>
+                </form>
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.0.3.min.js"><\/script>')</script>
+        <script src="libs/bootstrap-3.0.0/dist/js/bootstrap.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <!-- <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script> -->
+    </body>
+</html>
